@@ -1,0 +1,47 @@
+.widget{
+    .chart {
+        width: 65%;
+        background: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .controls{
+            height: 50px;
+            border-bottom: 1px solid #ccc;
+            nav{
+                float: left;
+                width: 75%;
+                line-height: 50px;
+                border-right: 1px solid #ccc;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: #154c88;
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 0 1.5em;
+                }
+            }
+            div {
+                line-height: 50px;
+                text-align: center;
+                span:first-child {
+                    color: #7dd343;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        } 
+    }
+    .info .info-module .heading::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .widget .chart .controls nav a {
+        padding: 0 1em;
+    }
+}

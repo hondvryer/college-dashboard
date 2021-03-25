@@ -1,0 +1,42 @@
+.page-title {
+    background: #154c88;
+    margin: 0;
+    padding: 15px;
+    color: #fff;
+    text-align: left;
+}
+
+.btn.btn-lg {
+    font-size: .9rem;
+    height: 2rem;
+    text-decoration: none;
+    padding: .35rem .6rem;
+}
+
+.btn.btn-primary {
+    background: #4ab4e8;
+    border-color: #2f99dc;
+    color: #fff;
+}
+
+.float-right {
+    float: right;
+}
+
+.btn {
+    appearance: none;
+    background: #fff;
+    border: .05rem solid #2f99dc;
+    border-radius: .1rem;
+    color: #2f99dc;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+}

@@ -1,0 +1,113 @@
+.widget {
+    margin: 10px;
+    width: calc(50% - 20px);
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    float: left;
+    position: relative;
+    transition: all .3s;
+    header {
+        background: #144c88;
+        padding: 1em 1.5em;
+        border-top: 4px solid #7dd343;
+        color: #fff;
+        position: relative;
+        h3 {
+            margin: 0;
+            font-size: 1.35em;
+            font-weight: 300;
+        }
+    }
+}
+
+.form-select {
+    appearance: none;
+    background: 0 0;
+    border-width: 0;
+    border-radius: .1rem;
+    font-size: .8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    outline: 0;
+    padding: .25rem .4rem;
+    vertical-align: middle;
+    width: 100%;
+    color: #fff;
+}
+
+.sort-option {
+    width: 120px;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    font-size: 15px;
+    height: 36px;
+    border: 1px solid #19579a;
+}
+
+.max-min {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: calc(100% - 20px);
+    width: 40px;
+    font-size: 20px;
+    border-width: 0;
+    background: 0 0!important;
+}
+
+.btn.btn-primary {
+    background: #4ab4e8;
+    border-color: #2f99dc;
+    color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    .widget .chart {
+        float: right;
+        width: 65%;
+        height: 275px;
+    }
+}
+
+.form-select:not([multiple]):not([size]) {
+    background: transparent url(http://13.232.99.42/img/caret-down.svg) no-repeat right .35rem center/.4rem .5rem;
+    padding-right: 1.2rem;
+    color: #fff;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.max {
+    position: absolute;
+    z-index: 999;
+    top: 4.2rem;
+    left: 0;
+    height: calc(100% - 5.625rem);
+    width: calc(100% - 1.25rem);
+}
+
+.widget.max{
+    .info {
+        height: calc(100% - 4rem);
+    }
+    .chart {
+        height: calc(100% - 4rem);
+        display: flex;
+        flex-direction: column;
+
+        .canvas-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            .canvas .table tbody {
+                flex: 1;
+                display: flex !important;
+            }
+        }
+    }
+}

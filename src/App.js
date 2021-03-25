@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import './App.scss';
-import { Body } from './Body';
+import { Body } from './components/Body';
 import { rootReducer } from './reducers';
 
 import {

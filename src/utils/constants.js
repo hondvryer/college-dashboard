@@ -25,3 +25,5 @@ export const dashboardConfig = [
 
 export const NUMBER0 = 0;
 export const NUMBER1 = 1;
+
+export const POSTMAN_URL = 'postman/assignment.postman_collection.json';

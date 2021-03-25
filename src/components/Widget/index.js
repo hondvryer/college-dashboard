@@ -15,16 +15,7 @@ export const Widget = (props) => {
     const maxViewWidget = useSelector(state => state.dashboard.maxViewWidget);
 
     useEffect(() => {
-        fetch(`${BASE_URL}${props.widgetConfig.url}`)
-            .then(res => res.json())
-            .then(
-                result => {
-                    result?.data && setWidgetData(result.data);
-                },
-                error => {
-                    console.log(error);
-                }
-            )
+        getWidgetData();
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
@@ -51,6 +42,19 @@ export const Widget = (props) => {
 
     const setMinimize = () => {
         dispatch(new MaxViewWidget(null).plainAction());
+    }
+
+    const getWidgetData = () => {
+        fetch(`${BASE_URL}${props.widgetConfig.url}`)
+            .then(res => res.json())
+            .then(
+                result => {
+                    result?.data && setWidgetData(result.data);
+                },
+                error => {
+                    console.log(error);
+                }
+            )
     }
 
     useEffect(() => {
@@ -93,7 +97,8 @@ export const Widget = (props) => {
                 </select>
                 {getMaximizeMinimizeIcon()}
             </header>
-            <Info stats={widgetData.stats} />
+            <Info stats={widgetData.stats}
+            url={props?.widgetConfig?.url} />
             <Chart
                 filter={widgetData.filter}
                 dataSet={widgetData.dataSet} />

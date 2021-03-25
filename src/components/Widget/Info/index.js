@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 import './styles.scss';
+import { BASE_URL } from './../../../utils/constants';
 
 export const Info = (props) => {
     const { stats } = props;
@@ -23,7 +25,7 @@ export const Info = (props) => {
             }
 
             <nav>
-                <a href="/get_highlight" target="_blank">
+                <a href={BASE_URL + props.url} target="_blank">
                     <span>View API</span>
                     <span className="fa fa-arrow-right fa-lg" />
                 </a>

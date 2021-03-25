@@ -1,7 +1,7 @@
 .widget .info {
     position: relative;
     width: 100%;
-    height: 275px;
+    height: 17.1875rem;
     background: #20649b;
 }
 
@@ -44,10 +44,10 @@
 }
 
 .widget .info .info-module .progress {
-    height: 5px;
+    height: 0.3125rem;
     margin: .35em 0 1em;
     background: #0f3d77;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .widget .info .info-module .progress:after {
@@ -55,7 +55,7 @@
     display: block;
     height: 100%;
     background: #45b0e6;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 
 .widget .info nav {
@@ -67,7 +67,7 @@
 
 .widget .info nav a {
     display: block;
-    line-height: 50px;
+    line-height: 3.125rem;
     text-decoration: none;
     text-align: center;
     color: #fff;
@@ -82,19 +82,19 @@
 .widget .info nav span:nth-child(2) {
     float: left;
     width: 25%;
-    line-height: 50px;
+    line-height: 3.125rem;
     background: #3099dd;
 }
 
 .info-active {
-    height: 5px;
+    height: 0.3125rem;
     background-color: #45b0e6;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .info-bg {
-    height: 5px;
+    height: 0.3125rem;
     background-color: #0f3d77;
     margin: .35em 0 1em;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }

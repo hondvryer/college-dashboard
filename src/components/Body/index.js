@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.scss';
-import { dashboardConfig } from './../utils/constants';
-import { Widget } from './../components/Widget';
+import { dashboardConfig } from './../../utils/constants';
+import { Widget } from './../Widget';
 
 export const Body = () => {
   return (

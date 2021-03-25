@@ -1,14 +1,14 @@
 .widget {
-    margin: 10px;
-    width: calc(50% - 20px);
-    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.25);
+    margin: 0.625rem;
+    width: calc(50% - 1.25rem);
+    box-shadow: 0.1875rem 0.1875rem 0.325rem 0 rgba(0, 0, 0, 0.25);
     float: left;
     position: relative;
     transition: all .3s;
     header {
         background: #144c88;
         padding: 1em 1.5em;
-        border-top: 4px solid #7dd343;
+        border-top: 0.25rem solid #7dd343;
         color: #fff;
         position: relative;
         h3 {
@@ -35,22 +35,22 @@
 }
 
 .sort-option {
-    width: 120px;
+    width: 8.125rem;
     position: absolute;
-    right: 60px;
-    top: 10px;
-    font-size: 15px;
-    height: 36px;
-    border: 1px solid #19579a;
+    right: 3.75rem;
+    top: 0.625rem;
+    font-size: 1rem;
+    height: 2.25rem;
+    border: 0.0625rem solid #19579a;
 }
 
 .max-min {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    height: calc(100% - 20px);
-    width: 40px;
-    font-size: 20px;
+    top: 0.625rem;
+    right: 0.625rem;
+    height: calc(100% - 1.25rem);
+    width: 2.5rem;
+    font-size: 1.25rem;
     border-width: 0;
     background: 0 0!important;
 }
@@ -65,7 +65,7 @@
     .widget .chart {
         float: right;
         width: 65%;
-        height: 275px;
+        height: 17.1815rem;
     }
 }
 
@@ -77,6 +77,7 @@
 
 .rotate-45 {
     transform: rotate(45deg);
+    font-size: 1.5rem;
 }
 
 .max {

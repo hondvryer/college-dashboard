@@ -35,6 +35,7 @@ Widgets - Resusable dynamic and responsive widget
 Widget Component : This Component displays a list of attributes. This Component gets the data from an API as specified in the widget definition.
 
 Canvas Component : This Component Displays the details of the dataSet returned by the API. This Component is the Child Component of Widget Component
+
 NOTE: Have not used socket.io connection for sorting widget data.
 
 HTTP client
@@ -48,4 +49,4 @@ create-react-app : The following link has all the commands that can be used with
 
 ReactJS : Refer to https://reactjs.org/ to understand the concepts of ReactJS
 
-Redux : Refer to hhttps://redux.js.org/ to understand how to use Redux
+Redux : Refer to https://redux.js.org/ to understand how to use Redux

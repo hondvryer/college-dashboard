@@ -3,6 +3,7 @@ import './styles.scss';
 import { Chart } from './Chart';
 import { Info } from './Info';
 import { BASE_URL } from './../../utils/constants';
+import { MOCK_RESPONSE } from './../../utils/mock';
 import { sortByKey } from './../../utils/sortUtils';
 import { useDispatch, useSelector } from 'react-redux';
 import { MaxViewWidget } from './../../actions/MaxViewWidget';
@@ -49,10 +50,16 @@ export const Widget = (props) => {
             .then(res => res.json())
             .then(
                 result => {
-                    result?.data && setWidgetData(result.data);
+                    if(result?.data) {
+                        setWidgetData(result.data);
+                    }
+                    else {
+                        setWidgetData(MOCK_RESPONSE[props.widgetConfig.url])
+                    }
                 },
                 error => {
                     console.log(error);
+                    setWidgetData(MOCK_RESPONSE[props.widgetConfig.url])
                 }
             )
     }

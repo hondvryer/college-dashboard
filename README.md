@@ -1,4 +1,4 @@
-**ABC College React JS Project**
+##ABC College React JS Project##
 
 What is the use of this Repo
 This Project is a Simple ReactJS Project which demonstrates the following
